@@ -11,16 +11,14 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.pylab import rcParams
-
-rcParams['figure.figsize'] = (20, 10)
-
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import mean_squared_error, r2_score
-
 import torch
 import torch.nn as nn
 import torch.optim as optim
 from torch.utils.data import TensorDataset, DataLoader
+
+rcParams['figure.figsize'] = (20, 10)
 
 # Set seeds for reproducibility
 np.random.seed(42)

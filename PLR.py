@@ -11,12 +11,11 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.pylab import rcParams
-
-rcParams['figure.figsize'] = (16, 8)
-
 from sklearn.preprocessing import StandardScaler, PolynomialFeatures, MinMaxScaler
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import mean_squared_error, r2_score
+
+rcParams['figure.figsize'] = (16, 8)
 
 
 # -------------------- Data Loading and Preprocessing -------------------- #
