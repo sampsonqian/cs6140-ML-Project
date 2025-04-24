@@ -49,23 +49,54 @@ nvda-stock-prediction/
 
 ## How to Run
 
-### Polynomial Linear Regression
+Each script will output evaluation metrics (MSE, R²) and display a plot of actual vs. predicted prices.
+
+### Polynomial Linear Regression Base Model
 
 ```bash
 python PLR.py
 ```
 
-### Feed-Forward DNN Regressor
+### Feed-Forward DNN Regressor Base Model
 
 ```bash
 python DNNR.py
 ```
 
-### LSTM Sequence Model
+### LSTM Sequence Model Base Model
 
 ```bash
 python LSTM.py
 ```
+
+For model tuning, each script will generate and plot top 10 performing models based on MSE and based on R², full result will be written into a corresponding cvs file.
+
+### PLR Model Tuning
+
+```bash
+python PLR_Tunning.py       
+```
+
+### DNN Model Tuning
+
+```bash
+python DNNR_Tunning.py
+```
+
+### LSTM Model Tuning
+
+```bash
+python LSTM_Tunning.py
+```
+
+Each model will be plotted against each other as well as the actual stock closing price.
+
+### Model Comparison
+
+```bash
+python comparison.py
+```
+
 
 Each script will output evaluation metrics (MSE, R²) and display a plot of actual vs. predicted prices.
 
