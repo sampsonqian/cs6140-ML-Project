@@ -49,7 +49,7 @@ nvda-stock-prediction/
 
 ## How to Run
 
-Each script will output evaluation metrics (MSE, R²) and display a plot of actual vs. predicted prices.
+For base model, each script will output evaluation metrics (MSE, R²) and display a plot of actual vs. predicted prices.
 
 ### Polynomial Linear Regression Base Model
 
@@ -69,7 +69,7 @@ python DNNR.py
 python LSTM.py
 ```
 
-For model tuning, each script will generate and plot top 10 performing models based on MSE and based on R², full result will be written into a corresponding cvs file.
+For model tuning, each script will generate and plot the top 10 performing models (ranked by MSE and R² scores). The full results will be saved to a corresponding CSV file.
 
 ### PLR Model Tuning
 
@@ -89,7 +89,7 @@ python DNNR_Tunning.py
 python LSTM_Tunning.py
 ```
 
-Each model will be plotted against each other as well as the actual stock closing price.
+For model comparison, each model's predictions will be plotted against the others, as well as against the actual stock closing price
 
 ### Model Comparison
 
@@ -97,8 +97,6 @@ Each model will be plotted against each other as well as the actual stock closin
 python comparison.py
 ```
 
-
-Each script will output evaluation metrics (MSE, R²) and display a plot of actual vs. predicted prices.
 
 ---
 
@@ -110,6 +108,7 @@ Each script will output evaluation metrics (MSE, R²) and display a plot of actu
 - matplotlib
 - scikit-learn
 - torch
+- tqdm
 
 Install all dependencies via:
 
